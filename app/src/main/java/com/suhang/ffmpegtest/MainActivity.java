@@ -42,9 +42,8 @@ public class MainActivity extends AppCompatActivity {
             public void run() {
                 String basePath = Environment.getExternalStorageDirectory().getPath();
 
-                String cmd_transcoding = String.format("ffmpeg -i %s -c:v libx264 %s  -c:a libfdk_aac %s",
+                String cmd_transcoding = String.format("ffmpeg -i %s -b:v 640k %s",
                         basePath + "/" + "girl.mp4",
-                        "-crf 40",
                         basePath + "/" + "my_girl.mp4");
                 int i = jxFFmpegCMDRun(cmd_transcoding);
                 Log.i("MainActivity", i + " ");

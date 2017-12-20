@@ -31,6 +31,7 @@
 #include <errno.h>
 #include <limits.h>
 #include <stdint.h>
+#include "android_log.h"
 
 #if HAVE_IO_H
 #include <io.h>
@@ -4532,6 +4533,15 @@ static void log_callback_null(void *ptr, int level, const char *fmt, va_list vl)
 
 int jxRun(int argc, char **argv)
 {
+    if(use_log_report)
+    {
+        av_log_set_callback(ffp_log_callback_report);
+    }
+    else
+    {
+        av_log_set_callback(ffp_log_callback_brief);
+    }
+
     int i, ret;
     int64_t ti;
 
