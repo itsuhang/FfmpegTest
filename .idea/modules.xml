@@ -3,7 +3,11 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/FfmpegTest.iml" filepath="$PROJECT_DIR$/FfmpegTest.iml" />
+      <module fileurl="file://D:\workspace\FfmpegTest\FfmpegTest.iml" filepath="D:\workspace\FfmpegTest\FfmpegTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SmallVideoLib2/SmallVideoLib2.iml" filepath="$PROJECT_DIR$/SmallVideoLib2/SmallVideoLib2.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://D:\workspace\FfmpegTest\app\app.iml" filepath="D:\workspace\FfmpegTest\app\app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sample/sample.iml" filepath="$PROJECT_DIR$/sample/sample.iml" />
     </modules>
   </component>
 </project>
